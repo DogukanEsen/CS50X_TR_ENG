@@ -9,9 +9,10 @@ int main(int argc, string argv[])
     int key = 0;
     if(argc == 2)
     {
+        //atoi fonksiyonu girilen değeri alıyor.
         key = atoi(argv[1]);
     }
-
+    //Burada girilen değerde hata var mı diye bakılıyor. 
     if (key>=26)
     {
         key %= 26;
@@ -29,7 +30,7 @@ if (argc==2)
 {
     for (int i = 0, n = strlen(s); i < n; i++)
     { 
-    
+        //Büyük küçük harf ayarı yapılıyor.
         if (s[i] >= 65 && s[i] <= 90)
         {
             if(s[i] + key > 90)
