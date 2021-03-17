@@ -1,1 +1,1 @@
-#Coming Soon
+//İlerleyen tarihte güncelleyeceğim.
