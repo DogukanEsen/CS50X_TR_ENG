@@ -9,7 +9,7 @@ int shift(char m);
 int main(int argc, string argv[])
 {
 
-
+//Hatalar ayıklanıyor.
     if (argc == 2)
     {
         string a = argv[1];
@@ -21,14 +21,15 @@ int main(int argc, string argv[])
                 printf("Usage: kelim: keyword\n");
                 return 1;
             }
-        }    
+        }  
+        
     string s = get_string("kelime: ");
     int s_uzunluk = strlen(s);
     char ciphered[s_uzunluk];
     printf("ciphertext: ");
 
     for(int i = 0, j = 0; i < s_uzunluk; i++ )    
-           {
+           {//sırayla fonksiyona yönlendiriliyor.
             int k = shift(a[j]);
             if (s[i] >= 65 && s[i] <= 90)
             {
@@ -54,9 +55,9 @@ int main(int argc, string argv[])
     }
 } 
 
+//Fonksiyonun amacı büyük küçük harf ayrımı yapmak ve ona göre azaltmak.
  int shift(char m){
-    
-
+     
       if (m >= 65 && m <= 90)
       {
           m -= 65;
